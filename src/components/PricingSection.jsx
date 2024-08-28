@@ -19,7 +19,7 @@ const PricingSection = () => {
   };
 
   return (
-    <div className="pricing-section-wrapper  bg-white flex flex-col items-center  px-4">
+    <div className="pricing-section-wrapper  bg-white flex flex-col items-center py-16 px-4">
       <div className="text-center mb-8">
         <p className="text-center text-1xl text-normal text-blue-900 mb-3">
           Pricing plans
@@ -39,7 +39,7 @@ const PricingSection = () => {
 
       <div className="pricing-section-container max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-8">
         {/* Event Package Selection */}
-        <div className="pricing-package bg-white border mb-10 border-gray-200 shadow-lg rounded-lg p-8 w-full md:w-2/3">
+        <div className="pricing-package bg-white border border-gray-200 shadow-lg rounded-lg p-8 w-full md:w-2/3">
           <h3 className="text-2xl font-bold text-gray-800 mb-4">
             Choose your Event Package
           </h3>
