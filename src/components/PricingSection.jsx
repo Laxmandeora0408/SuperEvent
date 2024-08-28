@@ -18,36 +18,28 @@ const PricingSection = () => {
     else setPrice(3999);
   };
 
-  const logos = [
-    "images/logo2.jpg",
-    "images/logo2.jpg",
-    "images/logo2.jpg",
-    "images/logo2.jpg",
-    "images/logo3.jpg",
-    "images/logo4.jpg",
-  ];
-
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center py-16 px-4">
+    <div className="pricing-section-wrapper  bg-white flex flex-col items-center  px-4">
       <div className="text-center mb-8">
         <p className="text-center text-1xl text-normal text-blue-900 mb-3">
           Pricing plans
         </p>
-        <h2 className="text-5xl font-bold  text-blue-800 mb-2">
+        <h2 className="pricing-title text-5xl font-bold text-blue-800 mb-2">
           Never stress{" "}
           <span className="text-blue-900">
-            over planning <br></br>an event
+            over planning <br /> an event
           </span>{" "}
           ever again
         </h2>
-        <p className="text-gray-600">
+        <p className="pricing-subtitle text-gray-600">
           Small events are always free, bigger ones are paid by size. Simple and
           fair.
         </p>
       </div>
 
-      <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-8">
-        <div className="bg-white border border-gray-200 shadow-lg rounded-lg p-8 w-full md:w-2/3">
+      <div className="pricing-section-container max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-8">
+        {/* Event Package Selection */}
+        <div className="pricing-package bg-white border mb-10 border-gray-200 shadow-lg rounded-lg p-8 w-full md:w-2/3">
           <h3 className="text-2xl font-bold text-gray-800 mb-4">
             Choose your Event Package
           </h3>
@@ -117,14 +109,15 @@ const PricingSection = () => {
           </div>
         </div>
 
-        <div className="bg-blue-900 text-white shadow-lg rounded-lg p-8 w-full md:w-1/3 flex flex-col items-center justify-center">
+        {/* Pricing Information */}
+        <div className="pricing-info bg-blue-900 text-white shadow-lg rounded-lg p-8 w-full md:w-1/3 flex flex-col items-center justify-center">
           <h3 className="text-xl font-medium mb-4">Event price</h3>
-          <div className="text-5xl font-bold mb-2 mt-10 ">€{price}</div>
+          <div className="text-5xl font-bold mb-2 mt-10">€{price}</div>
           <div className="text-lg mb-8 mt-10">{attendees}+ attendees</div>
           <button className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-full mb-4 hover:bg-gray-100 transition">
             Create Your Event
           </button>
-          <button className=" px-6 py-3 ">Book a demo</button>
+          <button className=" px-6 py-3">Book a demo</button>
         </div>
       </div>
     </div>

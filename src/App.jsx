@@ -6,6 +6,7 @@ import Section from "./components/Section";
 import FaqPage from "./components/FaqPage";
 import Footer from "./components/Footer";
 import Scroll from "./components/Scroll";
+import MessageIcons from "./components/Demo";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Section />
       <FaqPage />
       <Footer />
+      <MessageIcons />
     </div>
   );
 }
