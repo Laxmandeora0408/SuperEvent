@@ -1,0 +1,57 @@
+#overText {
+  color: rgb(11, 48, 79);
+}
+.star-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 2px;
+  background: cyan;
+  border-radius: 5px;
+  outline: none;
+}
+
+.footer {
+  background-color: rgb(27, 120, 197);
+}
+
+/* Slider Thumb - Star Shape for WebKit Browsers (Chrome, Safari) */
+.star-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(11, 48, 79)"><path d="M12 2l3 7h8l-6 4.5L17 21l-5-3.5L7 21l2-7.5L3 9h8z"/></svg>')
+    no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #9733;
+}
+
+.msgType {
+  border-radius: 0px 0px 20px 20px;
+}
+.colortext {
+  background-color: #1c78c5;
+}
+
+/* Add this to App.css or your CSS file */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 15s linear infinite;
+  display: flex;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
