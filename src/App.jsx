@@ -18,7 +18,6 @@ function App() {
       <Section />
       <FaqPage />
       <Footer />
-      <MessageIcons />
     </div>
   );
 }
